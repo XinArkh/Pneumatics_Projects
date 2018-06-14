@@ -1,0 +1,2307 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:DPMaster id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Version>1</_Version>
+<_SubVersion>2</_SubVersion>
+<_attributes href="#ref-4"/>
+<_commonProperties href="#ref-5"/>
+<_specificProperties href="#ref-6"/>
+<_PlcStopTime>100</_PlcStopTime>
+<_BusAddress>1</_BusAddress>
+<_Gsdname id="ref-7">RX010162</_Gsdname>
+<_ModelName id="ref-8">L20 DP-Master</_ModelName>
+<_MaxSlaveCount>124</_MaxSlaveCount>
+<_ActSlaveCount>1</_ActSlaveCount>
+<_HighestSlaveAddress>4</_HighestSlaveAddress>
+<_Error>0</_Error>
+<_MaxIQCount>122</_MaxIQCount>
+<_MaxICount>122</_MaxICount>
+<_MaxQCount>244</_MaxQCount>
+<_MaxIConsCount>122</_MaxIConsCount>
+<_MaxQConsCount>122</_MaxQConsCount>
+<_Comment id="ref-9"></_Comment>
+<_VendorName id="ref-10">Rexroth</_VendorName>
+<_SoftwareVersion id="ref-11">V 1.1</_SoftwareVersion>
+<_HardwareVersion id="ref-12">V 1.1</_HardwareVersion>
+<_IdentNumber>354</_IdentNumber>
+<_Revision id="ref-13">V 1.1</_Revision>
+<_RevisionNumber>0</_RevisionNumber>
+<DPSlaves href="#ref-14"/>
+</a1:DPMaster>
+<a2:ChannelAttributesClass id="ref-4" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type id="ref-15">dp-master</_type>
+<_typeName id="ref-16">DPMaster</_typeName>
+<_indexInParent>3</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-5" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name id="ref-17">L20 DP-Master</_name>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>2</_NodeId>
+<_inputIecAddress id="ref-18">%IB120</_inputIecAddress>
+<_outputIecAddress id="ref-19">%QB120</_outputIecAddress>
+<_diagnosisIecAddress id="ref-20">%MB100</_diagnosisIecAddress>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-21"/>
+</a2:CommonPropertiesClass>
+<a2:SpecificMasterPropertiesClass id="ref-6" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_gsdFilename id="ref-22">RX010162.gsd</_gsdFilename>
+<_stationNumber>1</_stationNumber>
+<_highestStationNumber>2</_highestStationNumber>
+<_selectedBaudrate>7</_selectedBaudrate>
+<_autoStart>false</_autoStart>
+<_optimize>true</_optimize>
+<_busParameter href="#ref-23"/>
+<_groupList href="#ref-24"/>
+</a2:SpecificMasterPropertiesClass>
+<a3:ArrayList id="ref-14" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-25"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-21" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<a2:DPBusParameterClass id="ref-23" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_baudRate>6</_baudRate>
+<_slotTime>100</_slotTime>
+<_minStationDelayTime>11</_minStationDelayTime>
+<_maxStationDelayTime>60</_maxStationDelayTime>
+<_quietTime>1</_quietTime>
+<_setupTime>1</_setupTime>
+<_targetRotationTime>2994</_targetRotationTime>
+<_gapUpdateFactor>10</_gapUpdateFactor>
+<_maxRetryLimit>1</_maxRetryLimit>
+<_minSlaveInterval>20</_minSlaveInterval>
+<_pollTime>10</_pollTime>
+<_dataControlTime>1200</_dataControlTime>
+<_watchdogTime>1000</_watchdogTime>
+<_tid1>37</_tid1>
+<_tid2>37</_tid2>
+<_highestStationAdr>126</_highestStationAdr>
+</a2:DPBusParameterClass>
+<a3:ArrayList id="ref-24" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-27"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-25" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-28"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-26" SOAP-ENC:arrayType="xsd:anyType[0]">
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-27" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-29"/>
+<item href="#ref-30"/>
+<item href="#ref-31"/>
+<item href="#ref-32"/>
+<item href="#ref-33"/>
+<item href="#ref-34"/>
+<item href="#ref-35"/>
+<item href="#ref-36"/>
+</SOAP-ENC:Array>
+<a1:DPSlaveData id="ref-28" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_attributes href="#ref-37"/>
+<_commonProperties href="#ref-38"/>
+<_specificProperties href="#ref-39"/>
+<_BusAddress>4</_BusAddress>
+<_Gsdname id="ref-40">RX0105BA</_Gsdname>
+<_Type>1</_Type>
+<_SlaveType>0</_SlaveType>
+<_SubType>0</_SubType>
+<_FailSafe>0</_FailSafe>
+<_RevisionNo>0</_RevisionNo>
+<_Mode>1</_Mode>
+<_Diagnose>0</_Diagnose>
+<_DiagDataLen>16</_DiagDataLen>
+<_ActModuleCount>10</_ActModuleCount>
+<_ActIQCount>11</_ActIQCount>
+<_ActICount>6</_ActICount>
+<_ActQCount>5</_ActQCount>
+<_MaxModule>63</_MaxModule>
+<_MaxUsrPrm>1</_MaxUsrPrm>
+<_ActUsrPrm>0</_ActUsrPrm>
+<_hasExtUsrPrm>true</_hasExtUsrPrm>
+<_MaxI>184</_MaxI>
+<_MaxQ>184</_MaxQ>
+<_MaxIQ>184</_MaxIQ>
+<_ImplType href="#ref-9"/>
+<_Revision id="ref-41">V2.0</_Revision>
+<_Comment href="#ref-9"/>
+<_ModelName id="ref-42">R-IL PB BK DP/V1 (DIP8=OFF)</_ModelName>
+<_VendorName xsi:null="1"/>
+<_SoftwareVersion id="ref-43">B</_SoftwareVersion>
+<_HardwareVersion id="ref-44">V2.0</_HardwareVersion>
+<_BitmapDevice id="ref-45">RX_R05BA</_BitmapDevice>
+<_BitmapDiag id="ref-46">RX_D05BA</_BitmapDiag>
+<_BitmapSF id="ref-47">RX_S05BA</_BitmapSF>
+<_IdentNumber>1466</_IdentNumber>
+<_Group>0</_Group>
+<_ClearMode>0</_ClearMode>
+<_ParaMode>0</_ParaMode>
+<_Active>true</_Active>
+<_guid id="ref-48">{24742659-d0de-4363-900c-ab6a666fd099}</_guid>
+<_UsrPrmDataArray href="#ref-49"/>
+<_DefaultUsrPrmDataArray href="#ref-50"/>
+<DPModules href="#ref-51"/>
+</a1:DPSlaveData>
+<a2:DPGroupClass id="ref-29" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_groupName id="ref-52">Gr 1</_groupName>
+<_syncMode>true</_syncMode>
+<_freezeMode>true</_freezeMode>
+</a2:DPGroupClass>
+<a2:DPGroupClass id="ref-30" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_groupName id="ref-53">Gr 2</_groupName>
+<_syncMode>true</_syncMode>
+<_freezeMode>true</_freezeMode>
+</a2:DPGroupClass>
+<a2:DPGroupClass id="ref-31" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_groupName id="ref-54">Gr 3</_groupName>
+<_syncMode>true</_syncMode>
+<_freezeMode>true</_freezeMode>
+</a2:DPGroupClass>
+<a2:DPGroupClass id="ref-32" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_groupName id="ref-55">Gr 4</_groupName>
+<_syncMode>true</_syncMode>
+<_freezeMode>true</_freezeMode>
+</a2:DPGroupClass>
+<a2:DPGroupClass id="ref-33" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_groupName id="ref-56">Gr 5</_groupName>
+<_syncMode>true</_syncMode>
+<_freezeMode>true</_freezeMode>
+</a2:DPGroupClass>
+<a2:DPGroupClass id="ref-34" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_groupName id="ref-57">Gr 6</_groupName>
+<_syncMode>true</_syncMode>
+<_freezeMode>true</_freezeMode>
+</a2:DPGroupClass>
+<a2:DPGroupClass id="ref-35" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_groupName id="ref-58">Gr 7</_groupName>
+<_syncMode>true</_syncMode>
+<_freezeMode>true</_freezeMode>
+</a2:DPGroupClass>
+<a2:DPGroupClass id="ref-36" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_groupName id="ref-59">Gr 8</_groupName>
+<_syncMode>true</_syncMode>
+<_freezeMode>true</_freezeMode>
+</a2:DPGroupClass>
+<a2:ChannelAttributesClass id="ref-37" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type id="ref-60">dp-slave</_type>
+<_typeName id="ref-61">DPSlave</_typeName>
+<_indexInParent>1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-38" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name id="ref-62">R-IL PB BK DP/V1 (DIP8=OFF)</_name>
+<_expanded>false</_expanded>
+<_selected>false</_selected>
+<_NodeId>0</_NodeId>
+<_inputIecAddress id="ref-63">%IB1</_inputIecAddress>
+<_outputIecAddress id="ref-64">%QB1</_outputIecAddress>
+<_diagnosisIecAddress id="ref-65">%MB0</_diagnosisIecAddress>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-66"/>
+</a2:CommonPropertiesClass>
+<a2:DPSlaveSpecificProperties id="ref-39" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Gsdname id="ref-67">RX0105BA.gsd</_Gsdname>
+<_stationNumber>4</_stationNumber>
+<_stationActive>true</_stationActive>
+<_tsdr>11</_tsdr>
+<_lockUnlock>2</_lockUnlock>
+<_watchdogOn>true</_watchdogOn>
+<_watchdogTime>1000</_watchdogTime>
+<_group>0</_group>
+<_failSafe>false</_failSafe>
+<_usrPrmDataArray href="#ref-68"/>
+<_extUsrPrmDataArray href="#ref-69"/>
+<_selectedModules href="#ref-70"/>
+</a2:DPSlaveSpecificProperties>
+<SOAP-ENC:Array id="ref-49" xsi:type="SOAP-ENC:base64">IA==</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-50" xsi:type="SOAP-ENC:base64">IA==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-51" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-71"/>
+<_size>10</_size>
+<_version>10</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-66" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-68" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-72"/>
+<_size>1</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-69" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-73"/>
+<_size>6</_size>
+<_version>7</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-70" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-74"/>
+<_size>10</_size>
+<_version>10</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-71" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-75"/>
+<item href="#ref-76"/>
+<item href="#ref-77"/>
+<item href="#ref-78"/>
+<item href="#ref-79"/>
+<item href="#ref-80"/>
+<item href="#ref-81"/>
+<item href="#ref-82"/>
+<item href="#ref-83"/>
+<item href="#ref-84"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-72" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-85"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-73" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-86"/>
+<item href="#ref-87"/>
+<item href="#ref-88"/>
+<item href="#ref-89"/>
+<item href="#ref-90"/>
+<item href="#ref-91"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-74" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-92"/>
+<item href="#ref-93"/>
+<item href="#ref-94"/>
+<item href="#ref-95"/>
+<item href="#ref-96"/>
+<item href="#ref-97"/>
+<item href="#ref-98"/>
+<item href="#ref-99"/>
+<item href="#ref-100"/>
+<item href="#ref-101"/>
+</SOAP-ENC:Array>
+<a1:DPModuleData id="ref-75" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Modulname id="ref-102">R-IB IL 24 DI 16</_Modulname>
+<_SymModulNo>0</_SymModulNo>
+<_Diagnose>0</_Diagnose>
+<_guid id="ref-103">{3b542b14-dee1-4e52-8d27-9016e72ed050}</_guid>
+<_attributes href="#ref-104"/>
+<_commonProperties href="#ref-105"/>
+<_Description href="#ref-106"/>
+<_UsrPrmDataArray href="#ref-107"/>
+<_DefaultUsrPrmDataArray href="#ref-108"/>
+<_CfgDataArray href="#ref-109"/>
+<_ChannelData href="#ref-110"/>
+</a1:DPModuleData>
+<a1:DPModuleData id="ref-76" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Modulname id="ref-111">R-IB IL 24 DI 4</_Modulname>
+<_SymModulNo>0</_SymModulNo>
+<_Diagnose>0</_Diagnose>
+<_guid id="ref-112">{84dee024-8a03-4d64-b642-7bc7675ba9b4}</_guid>
+<_attributes href="#ref-113"/>
+<_commonProperties href="#ref-114"/>
+<_Description href="#ref-115"/>
+<_UsrPrmDataArray href="#ref-116"/>
+<_DefaultUsrPrmDataArray href="#ref-117"/>
+<_CfgDataArray href="#ref-118"/>
+<_ChannelData href="#ref-119"/>
+</a1:DPModuleData>
+<a1:DPModuleData id="ref-77" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Modulname id="ref-120">R-IB IL 24 DI 4</_Modulname>
+<_SymModulNo>0</_SymModulNo>
+<_Diagnose>0</_Diagnose>
+<_guid id="ref-121">{40d203e9-ad40-4fea-8489-a3a0e133fab4}</_guid>
+<_attributes href="#ref-122"/>
+<_commonProperties href="#ref-123"/>
+<_Description href="#ref-124"/>
+<_UsrPrmDataArray href="#ref-125"/>
+<_DefaultUsrPrmDataArray href="#ref-126"/>
+<_CfgDataArray href="#ref-127"/>
+<_ChannelData href="#ref-128"/>
+</a1:DPModuleData>
+<a1:DPModuleData id="ref-78" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Modulname id="ref-129">R-IB IL 24 DI 4</_Modulname>
+<_SymModulNo>0</_SymModulNo>
+<_Diagnose>0</_Diagnose>
+<_guid id="ref-130">{2e2cfe75-d80b-44d5-982f-61bed0149ff6}</_guid>
+<_attributes href="#ref-131"/>
+<_commonProperties href="#ref-132"/>
+<_Description href="#ref-133"/>
+<_UsrPrmDataArray href="#ref-134"/>
+<_DefaultUsrPrmDataArray href="#ref-135"/>
+<_CfgDataArray href="#ref-136"/>
+<_ChannelData href="#ref-137"/>
+</a1:DPModuleData>
+<a1:DPModuleData id="ref-79" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Modulname id="ref-138">R-IB IL 24 DI 4</_Modulname>
+<_SymModulNo>0</_SymModulNo>
+<_Diagnose>0</_Diagnose>
+<_guid id="ref-139">{bca71c63-669c-4ba4-b25d-8f84de784d10}</_guid>
+<_attributes href="#ref-140"/>
+<_commonProperties href="#ref-141"/>
+<_Description href="#ref-142"/>
+<_UsrPrmDataArray href="#ref-143"/>
+<_DefaultUsrPrmDataArray href="#ref-144"/>
+<_CfgDataArray href="#ref-145"/>
+<_ChannelData href="#ref-146"/>
+</a1:DPModuleData>
+<a1:DPModuleData id="ref-80" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Modulname id="ref-147">R-IB IL 24 DO 4</_Modulname>
+<_SymModulNo>0</_SymModulNo>
+<_Diagnose>0</_Diagnose>
+<_guid id="ref-148">{d0c3f041-cef9-44f5-81cf-ec74f0224b16}</_guid>
+<_attributes href="#ref-149"/>
+<_commonProperties href="#ref-150"/>
+<_Description href="#ref-151"/>
+<_UsrPrmDataArray href="#ref-152"/>
+<_DefaultUsrPrmDataArray href="#ref-153"/>
+<_CfgDataArray href="#ref-154"/>
+<_ChannelData href="#ref-155"/>
+</a1:DPModuleData>
+<a1:DPModuleData id="ref-81" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Modulname id="ref-156">R-IB IL 24 DO 4</_Modulname>
+<_SymModulNo>0</_SymModulNo>
+<_Diagnose>0</_Diagnose>
+<_guid id="ref-157">{96943788-79ee-436d-a12e-aea1ba53d9b6}</_guid>
+<_attributes href="#ref-158"/>
+<_commonProperties href="#ref-159"/>
+<_Description href="#ref-160"/>
+<_UsrPrmDataArray href="#ref-161"/>
+<_DefaultUsrPrmDataArray href="#ref-162"/>
+<_CfgDataArray href="#ref-163"/>
+<_ChannelData href="#ref-164"/>
+</a1:DPModuleData>
+<a1:DPModuleData id="ref-82" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Modulname id="ref-165">R-IB IL 24 DO 4</_Modulname>
+<_SymModulNo>0</_SymModulNo>
+<_Diagnose>0</_Diagnose>
+<_guid id="ref-166">{b6f2917b-c3f5-484f-ba69-06dfa6a8f7b1}</_guid>
+<_attributes href="#ref-167"/>
+<_commonProperties href="#ref-168"/>
+<_Description href="#ref-169"/>
+<_UsrPrmDataArray href="#ref-170"/>
+<_DefaultUsrPrmDataArray href="#ref-171"/>
+<_CfgDataArray href="#ref-172"/>
+<_ChannelData href="#ref-173"/>
+</a1:DPModuleData>
+<a1:DPModuleData id="ref-83" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Modulname id="ref-174">R-IB IL 24 DO 4</_Modulname>
+<_SymModulNo>0</_SymModulNo>
+<_Diagnose>0</_Diagnose>
+<_guid id="ref-175">{fb37c814-ef08-4ac4-9ac7-250b39c273df}</_guid>
+<_attributes href="#ref-176"/>
+<_commonProperties href="#ref-177"/>
+<_Description href="#ref-178"/>
+<_UsrPrmDataArray href="#ref-179"/>
+<_DefaultUsrPrmDataArray href="#ref-180"/>
+<_CfgDataArray href="#ref-181"/>
+<_ChannelData href="#ref-182"/>
+</a1:DPModuleData>
+<a1:DPModuleData id="ref-84" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_Modulname id="ref-183">R-IB IL 24 DO 4</_Modulname>
+<_SymModulNo>0</_SymModulNo>
+<_Diagnose>0</_Diagnose>
+<_guid id="ref-184">{8a2b3d47-71b6-4f86-9ee1-3c18aab2cd9a}</_guid>
+<_attributes href="#ref-185"/>
+<_commonProperties href="#ref-186"/>
+<_Description href="#ref-187"/>
+<_UsrPrmDataArray href="#ref-188"/>
+<_DefaultUsrPrmDataArray href="#ref-189"/>
+<_CfgDataArray href="#ref-190"/>
+<_ChannelData href="#ref-191"/>
+</a1:DPModuleData>
+<a2:DPUsrPrmDataClass id="ref-85" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>32</_item>
+</a2:DPUsrPrmDataClass>
+<a2:DPExtUsrPrmDataClass id="ref-86" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_const>true</_const>
+<_refIndex>-1</_refIndex>
+<_byteOffset>0</_byteOffset>
+<_value>0</_value>
+<_usrConst href="#ref-192"/>
+</a2:DPExtUsrPrmDataClass>
+<a2:DPExtUsrPrmDataClass id="ref-87" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_const>false</_const>
+<_refIndex>1</_refIndex>
+<_byteOffset>0</_byteOffset>
+<_value>0</_value>
+<_usrConst href="#ref-193"/>
+</a2:DPExtUsrPrmDataClass>
+<a2:DPExtUsrPrmDataClass id="ref-88" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_const>false</_const>
+<_refIndex>2</_refIndex>
+<_byteOffset>0</_byteOffset>
+<_value>0</_value>
+<_usrConst href="#ref-194"/>
+</a2:DPExtUsrPrmDataClass>
+<a2:DPExtUsrPrmDataClass id="ref-89" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_const>false</_const>
+<_refIndex>3</_refIndex>
+<_byteOffset>0</_byteOffset>
+<_value>0</_value>
+<_usrConst href="#ref-195"/>
+</a2:DPExtUsrPrmDataClass>
+<a2:DPExtUsrPrmDataClass id="ref-90" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_const>false</_const>
+<_refIndex>4</_refIndex>
+<_byteOffset>0</_byteOffset>
+<_value>1</_value>
+<_usrConst href="#ref-196"/>
+</a2:DPExtUsrPrmDataClass>
+<a2:DPExtUsrPrmDataClass id="ref-91" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_const>false</_const>
+<_refIndex>5</_refIndex>
+<_byteOffset>0</_byteOffset>
+<_value>0</_value>
+<_usrConst href="#ref-197"/>
+</a2:DPExtUsrPrmDataClass>
+<a2:DPSelectedModuls id="ref-92" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_moduleName href="#ref-102"/>
+<_configBytes id="ref-198">66,1,190,1</_configBytes>
+<_mcClass>0</_mcClass>
+<_mtType>1</_mtType>
+<_prmDataLen>0</_prmDataLen>
+<_items href="#ref-199"/>
+<_extUsrPrmDataArray href="#ref-200"/>
+<_ioList href="#ref-201"/>
+<_guid href="#ref-103"/>
+</a2:DPSelectedModuls>
+<a2:DPSelectedModuls id="ref-93" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_moduleName href="#ref-111"/>
+<_configBytes id="ref-202">66,0,190,65</_configBytes>
+<_mcClass>0</_mcClass>
+<_mtType>1</_mtType>
+<_prmDataLen>0</_prmDataLen>
+<_items href="#ref-203"/>
+<_extUsrPrmDataArray href="#ref-204"/>
+<_ioList href="#ref-205"/>
+<_guid href="#ref-112"/>
+</a2:DPSelectedModuls>
+<a2:DPSelectedModuls id="ref-94" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_moduleName href="#ref-120"/>
+<_configBytes id="ref-206">66,0,190,65</_configBytes>
+<_mcClass>0</_mcClass>
+<_mtType>1</_mtType>
+<_prmDataLen>0</_prmDataLen>
+<_items href="#ref-207"/>
+<_extUsrPrmDataArray href="#ref-208"/>
+<_ioList href="#ref-209"/>
+<_guid href="#ref-121"/>
+</a2:DPSelectedModuls>
+<a2:DPSelectedModuls id="ref-95" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_moduleName href="#ref-129"/>
+<_configBytes id="ref-210">66,0,190,65</_configBytes>
+<_mcClass>0</_mcClass>
+<_mtType>1</_mtType>
+<_prmDataLen>0</_prmDataLen>
+<_items href="#ref-211"/>
+<_extUsrPrmDataArray href="#ref-212"/>
+<_ioList href="#ref-213"/>
+<_guid href="#ref-130"/>
+</a2:DPSelectedModuls>
+<a2:DPSelectedModuls id="ref-96" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_moduleName href="#ref-138"/>
+<_configBytes id="ref-214">66,0,190,65</_configBytes>
+<_mcClass>0</_mcClass>
+<_mtType>1</_mtType>
+<_prmDataLen>0</_prmDataLen>
+<_items href="#ref-215"/>
+<_extUsrPrmDataArray href="#ref-216"/>
+<_ioList href="#ref-217"/>
+<_guid href="#ref-139"/>
+</a2:DPSelectedModuls>
+<a2:DPSelectedModuls id="ref-97" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_moduleName href="#ref-147"/>
+<_configBytes id="ref-218">130,0,189,65</_configBytes>
+<_mcClass>1</_mcClass>
+<_mtType>1</_mtType>
+<_prmDataLen>0</_prmDataLen>
+<_items href="#ref-219"/>
+<_extUsrPrmDataArray href="#ref-220"/>
+<_ioList href="#ref-221"/>
+<_guid href="#ref-148"/>
+</a2:DPSelectedModuls>
+<a2:DPSelectedModuls id="ref-98" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_moduleName href="#ref-156"/>
+<_configBytes id="ref-222">130,0,189,65</_configBytes>
+<_mcClass>1</_mcClass>
+<_mtType>1</_mtType>
+<_prmDataLen>0</_prmDataLen>
+<_items href="#ref-223"/>
+<_extUsrPrmDataArray href="#ref-224"/>
+<_ioList href="#ref-225"/>
+<_guid href="#ref-157"/>
+</a2:DPSelectedModuls>
+<a2:DPSelectedModuls id="ref-99" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_moduleName href="#ref-165"/>
+<_configBytes id="ref-226">130,0,189,65</_configBytes>
+<_mcClass>1</_mcClass>
+<_mtType>1</_mtType>
+<_prmDataLen>0</_prmDataLen>
+<_items href="#ref-227"/>
+<_extUsrPrmDataArray href="#ref-228"/>
+<_ioList href="#ref-229"/>
+<_guid href="#ref-166"/>
+</a2:DPSelectedModuls>
+<a2:DPSelectedModuls id="ref-100" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_moduleName href="#ref-174"/>
+<_configBytes id="ref-230">130,0,189,65</_configBytes>
+<_mcClass>1</_mcClass>
+<_mtType>1</_mtType>
+<_prmDataLen>0</_prmDataLen>
+<_items href="#ref-231"/>
+<_extUsrPrmDataArray href="#ref-232"/>
+<_ioList href="#ref-233"/>
+<_guid href="#ref-175"/>
+</a2:DPSelectedModuls>
+<a2:DPSelectedModuls id="ref-101" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_moduleName href="#ref-183"/>
+<_configBytes id="ref-234">130,0,189,65</_configBytes>
+<_mcClass>1</_mcClass>
+<_mtType>1</_mtType>
+<_prmDataLen>0</_prmDataLen>
+<_items href="#ref-235"/>
+<_extUsrPrmDataArray href="#ref-236"/>
+<_ioList href="#ref-237"/>
+<_guid href="#ref-184"/>
+</a2:DPSelectedModuls>
+<a2:ChannelAttributesClass id="ref-104" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type id="ref-238">dp-module</_type>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-105" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name id="ref-239">__not_found__</_name>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>0</_NodeId>
+<_inputIecAddress id="ref-240">%IB1</_inputIecAddress>
+<_outputIecAddress id="ref-241">%QB1</_outputIecAddress>
+<_diagnosisIecAddress href="#ref-20"/>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-242"/>
+</a2:CommonPropertiesClass>
+<a3:ArrayList id="ref-106" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-243"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-107" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-108" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-109" xsi:type="SOAP-ENC:base64">QgG+AQ==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-110" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-244"/>
+<_size>2</_size>
+<_version>2</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-113" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-238"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-114" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-239"/>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>1</_NodeId>
+<_inputIecAddress id="ref-245">%IB5</_inputIecAddress>
+<_outputIecAddress id="ref-246">%QB1</_outputIecAddress>
+<_diagnosisIecAddress href="#ref-20"/>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-247"/>
+</a2:CommonPropertiesClass>
+<a3:ArrayList id="ref-115" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-248"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-116" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-117" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-118" xsi:type="SOAP-ENC:base64">QgC+QQ==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-119" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-249"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-122" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-238"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-123" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-239"/>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>2</_NodeId>
+<_inputIecAddress id="ref-250">%IB6</_inputIecAddress>
+<_outputIecAddress id="ref-251">%QB1</_outputIecAddress>
+<_diagnosisIecAddress href="#ref-20"/>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-252"/>
+</a2:CommonPropertiesClass>
+<a3:ArrayList id="ref-124" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-253"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-125" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-126" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-127" xsi:type="SOAP-ENC:base64">QgC+QQ==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-128" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-254"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-131" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-238"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-132" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-239"/>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>3</_NodeId>
+<_inputIecAddress id="ref-255">%IB7</_inputIecAddress>
+<_outputIecAddress id="ref-256">%QB1</_outputIecAddress>
+<_diagnosisIecAddress href="#ref-20"/>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-257"/>
+</a2:CommonPropertiesClass>
+<a3:ArrayList id="ref-133" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-258"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-134" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-135" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-136" xsi:type="SOAP-ENC:base64">QgC+QQ==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-137" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-259"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-140" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-238"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-141" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-239"/>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>4</_NodeId>
+<_inputIecAddress id="ref-260">%IB8</_inputIecAddress>
+<_outputIecAddress id="ref-261">%QB1</_outputIecAddress>
+<_diagnosisIecAddress href="#ref-20"/>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-262"/>
+</a2:CommonPropertiesClass>
+<a3:ArrayList id="ref-142" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-263"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-143" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-144" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-145" xsi:type="SOAP-ENC:base64">QgC+QQ==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-146" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-264"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-149" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-238"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-150" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-239"/>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>5</_NodeId>
+<_inputIecAddress id="ref-265">%IB3</_inputIecAddress>
+<_outputIecAddress id="ref-266">%QB1</_outputIecAddress>
+<_diagnosisIecAddress href="#ref-20"/>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-267"/>
+</a2:CommonPropertiesClass>
+<a3:ArrayList id="ref-151" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-268"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-152" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-153" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-154" xsi:type="SOAP-ENC:base64">ggC9QQ==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-155" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-269"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-158" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-238"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-159" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-239"/>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>6</_NodeId>
+<_inputIecAddress id="ref-270">%IB3</_inputIecAddress>
+<_outputIecAddress id="ref-271">%QB5</_outputIecAddress>
+<_diagnosisIecAddress href="#ref-20"/>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-272"/>
+</a2:CommonPropertiesClass>
+<a3:ArrayList id="ref-160" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-273"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-161" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-162" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-163" xsi:type="SOAP-ENC:base64">ggC9QQ==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-164" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-274"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-167" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-238"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-168" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-239"/>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>7</_NodeId>
+<_inputIecAddress id="ref-275">%IB3</_inputIecAddress>
+<_outputIecAddress id="ref-276">%QB6</_outputIecAddress>
+<_diagnosisIecAddress href="#ref-20"/>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-277"/>
+</a2:CommonPropertiesClass>
+<a3:ArrayList id="ref-169" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-278"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-170" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-171" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-172" xsi:type="SOAP-ENC:base64">ggC9QQ==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-173" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-279"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-176" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-238"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-177" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-239"/>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>8</_NodeId>
+<_inputIecAddress id="ref-280">%IB3</_inputIecAddress>
+<_outputIecAddress id="ref-281">%QB7</_outputIecAddress>
+<_diagnosisIecAddress href="#ref-20"/>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-282"/>
+</a2:CommonPropertiesClass>
+<a3:ArrayList id="ref-178" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-283"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-179" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-180" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-181" xsi:type="SOAP-ENC:base64">ggC9QQ==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-182" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-284"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-185" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-238"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a2:CommonPropertiesClass id="ref-186" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-239"/>
+<_expanded>true</_expanded>
+<_selected>false</_selected>
+<_NodeId>9</_NodeId>
+<_inputIecAddress id="ref-285">%IB3</_inputIecAddress>
+<_outputIecAddress id="ref-286">%QB8</_outputIecAddress>
+<_diagnosisIecAddress href="#ref-20"/>
+<_download>true</_download>
+<_excludeFromAutoaddr>false</_excludeFromAutoaddr>
+<_parameterList href="#ref-287"/>
+</a2:CommonPropertiesClass>
+<a3:ArrayList id="ref-187" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-288"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-188" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-189" xsi:type="SOAP-ENC:base64"></SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-190" xsi:type="SOAP-ENC:base64">ggC9QQ==</SOAP-ENC:Array>
+<a3:ArrayList id="ref-191" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-289"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-192" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-290"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-193" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-194" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-195" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-196" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-197" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-199" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-291"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-200" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-201" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-292"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-203" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-293"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-204" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-205" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-294"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-207" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-295"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-208" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-209" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-296"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-211" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-297"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-212" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-213" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-298"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-215" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-299"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-216" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-217" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-300"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-219" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-301"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-220" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-221" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-302"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-223" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-303"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-224" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-225" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-304"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-227" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-305"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-228" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-229" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-306"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-231" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-307"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-232" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-233" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-308"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-235" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-309"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-236" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-237" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-310"/>
+<_size>1</_size>
+<_version>1</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-242" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-243" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-311"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-244" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-312"/>
+<item href="#ref-313"/>
+</SOAP-ENC:Array>
+<a3:ArrayList id="ref-247" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-248" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-314"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-249" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-315"/>
+</SOAP-ENC:Array>
+<a3:ArrayList id="ref-252" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-253" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-316"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-254" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-317"/>
+</SOAP-ENC:Array>
+<a3:ArrayList id="ref-257" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-258" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-318"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-259" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-319"/>
+</SOAP-ENC:Array>
+<a3:ArrayList id="ref-262" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-263" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-320"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-264" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-321"/>
+</SOAP-ENC:Array>
+<a3:ArrayList id="ref-267" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-268" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-322"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-269" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-323"/>
+</SOAP-ENC:Array>
+<a3:ArrayList id="ref-272" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-273" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-324"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-274" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-325"/>
+</SOAP-ENC:Array>
+<a3:ArrayList id="ref-277" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-278" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-326"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-279" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-327"/>
+</SOAP-ENC:Array>
+<a3:ArrayList id="ref-282" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-283" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-328"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-284" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-329"/>
+</SOAP-ENC:Array>
+<a3:ArrayList id="ref-287" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-26"/>
+<_size>0</_size>
+<_version>0</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-288" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-330"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-289" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-331"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-290" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-332"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-291" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-333"/>
+<item href="#ref-334"/>
+<item href="#ref-335"/>
+<item href="#ref-336"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-292" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-337"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-293" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-338"/>
+<item href="#ref-339"/>
+<item href="#ref-340"/>
+<item href="#ref-341"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-294" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-342"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-295" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-343"/>
+<item href="#ref-344"/>
+<item href="#ref-345"/>
+<item href="#ref-346"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-296" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-347"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-297" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-348"/>
+<item href="#ref-349"/>
+<item href="#ref-350"/>
+<item href="#ref-351"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-298" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-352"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-299" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-353"/>
+<item href="#ref-354"/>
+<item href="#ref-355"/>
+<item href="#ref-356"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-300" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-357"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-301" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-358"/>
+<item href="#ref-359"/>
+<item href="#ref-360"/>
+<item href="#ref-361"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-302" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-362"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-303" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-363"/>
+<item href="#ref-364"/>
+<item href="#ref-365"/>
+<item href="#ref-366"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-304" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-367"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-305" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-368"/>
+<item href="#ref-369"/>
+<item href="#ref-370"/>
+<item href="#ref-371"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-306" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-372"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-307" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-373"/>
+<item href="#ref-374"/>
+<item href="#ref-375"/>
+<item href="#ref-376"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-308" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-377"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-309" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-378"/>
+<item href="#ref-379"/>
+<item href="#ref-380"/>
+<item href="#ref-381"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-310" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-382"/>
+</SOAP-ENC:Array>
+<a1:DPModuleDescription id="ref-311" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_ModuleType>1</_ModuleType>
+<_CountE>2</_CountE>
+<_ConsistenzE>1</_ConsistenzE>
+<_DataSizeE>0</_DataSizeE>
+<_CountA>0</_CountA>
+<_ConsistenzA>0</_ConsistenzA>
+<_DataSizeA>0</_DataSizeA>
+<_ioIdx>0</_ioIdx>
+</a1:DPModuleDescription>
+<a2:ChannelDataClass id="ref-312" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-383"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress href="#ref-240"/>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>I</_direction>
+<_bitChannels href="#ref-384"/>
+</a2:ChannelDataClass>
+<a2:ChannelDataClass id="ref-313" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-385"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress id="ref-386">%IB2</_iecAddress>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>I</_direction>
+<_bitChannels href="#ref-387"/>
+</a2:ChannelDataClass>
+<a1:DPModuleDescription id="ref-314" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_ModuleType>1</_ModuleType>
+<_CountE>1</_CountE>
+<_ConsistenzE>1</_ConsistenzE>
+<_DataSizeE>0</_DataSizeE>
+<_CountA>0</_CountA>
+<_ConsistenzA>0</_ConsistenzA>
+<_DataSizeA>0</_DataSizeA>
+<_ioIdx>0</_ioIdx>
+</a1:DPModuleDescription>
+<a2:ChannelDataClass id="ref-315" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-388"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress id="ref-389">%IB5</_iecAddress>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>I</_direction>
+<_bitChannels href="#ref-390"/>
+</a2:ChannelDataClass>
+<a1:DPModuleDescription id="ref-316" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_ModuleType>1</_ModuleType>
+<_CountE>1</_CountE>
+<_ConsistenzE>1</_ConsistenzE>
+<_DataSizeE>0</_DataSizeE>
+<_CountA>0</_CountA>
+<_ConsistenzA>0</_ConsistenzA>
+<_DataSizeA>0</_DataSizeA>
+<_ioIdx>0</_ioIdx>
+</a1:DPModuleDescription>
+<a2:ChannelDataClass id="ref-317" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-391"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress id="ref-392">%IB6</_iecAddress>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>I</_direction>
+<_bitChannels href="#ref-393"/>
+</a2:ChannelDataClass>
+<a1:DPModuleDescription id="ref-318" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_ModuleType>1</_ModuleType>
+<_CountE>1</_CountE>
+<_ConsistenzE>1</_ConsistenzE>
+<_DataSizeE>0</_DataSizeE>
+<_CountA>0</_CountA>
+<_ConsistenzA>0</_ConsistenzA>
+<_DataSizeA>0</_DataSizeA>
+<_ioIdx>0</_ioIdx>
+</a1:DPModuleDescription>
+<a2:ChannelDataClass id="ref-319" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-394"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress id="ref-395">%IB7</_iecAddress>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>I</_direction>
+<_bitChannels href="#ref-396"/>
+</a2:ChannelDataClass>
+<a1:DPModuleDescription id="ref-320" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_ModuleType>1</_ModuleType>
+<_CountE>1</_CountE>
+<_ConsistenzE>1</_ConsistenzE>
+<_DataSizeE>0</_DataSizeE>
+<_CountA>0</_CountA>
+<_ConsistenzA>0</_ConsistenzA>
+<_DataSizeA>0</_DataSizeA>
+<_ioIdx>0</_ioIdx>
+</a1:DPModuleDescription>
+<a2:ChannelDataClass id="ref-321" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-397"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress id="ref-398">%IB8</_iecAddress>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>I</_direction>
+<_bitChannels href="#ref-399"/>
+</a2:ChannelDataClass>
+<a1:DPModuleDescription id="ref-322" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_ModuleType>2</_ModuleType>
+<_CountE>0</_CountE>
+<_ConsistenzE>0</_ConsistenzE>
+<_DataSizeE>0</_DataSizeE>
+<_CountA>1</_CountA>
+<_ConsistenzA>1</_ConsistenzA>
+<_DataSizeA>0</_DataSizeA>
+<_ioIdx>0</_ioIdx>
+</a1:DPModuleDescription>
+<a2:ChannelDataClass id="ref-323" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-400"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress href="#ref-266"/>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>Q</_direction>
+<_bitChannels href="#ref-401"/>
+</a2:ChannelDataClass>
+<a1:DPModuleDescription id="ref-324" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_ModuleType>2</_ModuleType>
+<_CountE>0</_CountE>
+<_ConsistenzE>0</_ConsistenzE>
+<_DataSizeE>0</_DataSizeE>
+<_CountA>1</_CountA>
+<_ConsistenzA>1</_ConsistenzA>
+<_DataSizeA>0</_DataSizeA>
+<_ioIdx>0</_ioIdx>
+</a1:DPModuleDescription>
+<a2:ChannelDataClass id="ref-325" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-402"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress id="ref-403">%QB5</_iecAddress>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>Q</_direction>
+<_bitChannels href="#ref-404"/>
+</a2:ChannelDataClass>
+<a1:DPModuleDescription id="ref-326" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_ModuleType>2</_ModuleType>
+<_CountE>0</_CountE>
+<_ConsistenzE>0</_ConsistenzE>
+<_DataSizeE>0</_DataSizeE>
+<_CountA>1</_CountA>
+<_ConsistenzA>1</_ConsistenzA>
+<_DataSizeA>0</_DataSizeA>
+<_ioIdx>0</_ioIdx>
+</a1:DPModuleDescription>
+<a2:ChannelDataClass id="ref-327" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-405"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress id="ref-406">%QB6</_iecAddress>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>Q</_direction>
+<_bitChannels href="#ref-407"/>
+</a2:ChannelDataClass>
+<a1:DPModuleDescription id="ref-328" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_ModuleType>2</_ModuleType>
+<_CountE>0</_CountE>
+<_ConsistenzE>0</_ConsistenzE>
+<_DataSizeE>0</_DataSizeE>
+<_CountA>1</_CountA>
+<_ConsistenzA>1</_ConsistenzA>
+<_DataSizeA>0</_DataSizeA>
+<_ioIdx>0</_ioIdx>
+</a1:DPModuleDescription>
+<a2:ChannelDataClass id="ref-329" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-408"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress id="ref-409">%QB7</_iecAddress>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>Q</_direction>
+<_bitChannels href="#ref-410"/>
+</a2:ChannelDataClass>
+<a1:DPModuleDescription id="ref-330" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IO.DPData/IO.DPData%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_ModuleType>2</_ModuleType>
+<_CountE>0</_CountE>
+<_ConsistenzE>0</_ConsistenzE>
+<_DataSizeE>0</_DataSizeE>
+<_CountA>1</_CountA>
+<_ConsistenzA>1</_ConsistenzA>
+<_DataSizeA>0</_DataSizeA>
+<_ioIdx>0</_ioIdx>
+</a1:DPModuleDescription>
+<a2:ChannelDataClass id="ref-331" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_channelAttributes href="#ref-411"/>
+<_name href="#ref-9"/>
+<_expanded>false</_expanded>
+<_iecAddress id="ref-412">%QB8</_iecAddress>
+<_comment href="#ref-9"/>
+<_subModulCount>0</_subModulCount>
+<_direction>Q</_direction>
+<_bitChannels href="#ref-413"/>
+</a2:ChannelDataClass>
+<a2:DPUsrPrmDataClass id="ref-332" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>32</_item>
+</a2:DPUsrPrmDataClass>
+<a2:DPItemClass id="ref-333" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>66</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-334" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>1</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-335" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>190</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-336" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>1</_item>
+</a2:DPItemClass>
+<a2:DPIODataClass id="ref-337" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_mcClass>0</_mcClass>
+<_mtType>1</_mtType>
+<_cons>false</_cons>
+<_length>2</_length>
+</a2:DPIODataClass>
+<a2:DPItemClass id="ref-338" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>66</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-339" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>0</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-340" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>190</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-341" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>65</_item>
+</a2:DPItemClass>
+<a2:DPIODataClass id="ref-342" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_mcClass>0</_mcClass>
+<_mtType>1</_mtType>
+<_cons>false</_cons>
+<_length>1</_length>
+</a2:DPIODataClass>
+<a2:DPItemClass id="ref-343" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>66</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-344" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>0</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-345" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>190</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-346" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>65</_item>
+</a2:DPItemClass>
+<a2:DPIODataClass id="ref-347" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_mcClass>0</_mcClass>
+<_mtType>1</_mtType>
+<_cons>false</_cons>
+<_length>1</_length>
+</a2:DPIODataClass>
+<a2:DPItemClass id="ref-348" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>66</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-349" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>0</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-350" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>190</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-351" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>65</_item>
+</a2:DPItemClass>
+<a2:DPIODataClass id="ref-352" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_mcClass>0</_mcClass>
+<_mtType>1</_mtType>
+<_cons>false</_cons>
+<_length>1</_length>
+</a2:DPIODataClass>
+<a2:DPItemClass id="ref-353" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>66</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-354" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>0</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-355" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>190</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-356" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>65</_item>
+</a2:DPItemClass>
+<a2:DPIODataClass id="ref-357" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_mcClass>0</_mcClass>
+<_mtType>1</_mtType>
+<_cons>false</_cons>
+<_length>1</_length>
+</a2:DPIODataClass>
+<a2:DPItemClass id="ref-358" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>130</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-359" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>0</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-360" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>189</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-361" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>65</_item>
+</a2:DPItemClass>
+<a2:DPIODataClass id="ref-362" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_mcClass>1</_mcClass>
+<_mtType>1</_mtType>
+<_cons>false</_cons>
+<_length>1</_length>
+</a2:DPIODataClass>
+<a2:DPItemClass id="ref-363" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>130</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-364" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>0</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-365" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>189</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-366" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>65</_item>
+</a2:DPItemClass>
+<a2:DPIODataClass id="ref-367" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_mcClass>1</_mcClass>
+<_mtType>1</_mtType>
+<_cons>false</_cons>
+<_length>1</_length>
+</a2:DPIODataClass>
+<a2:DPItemClass id="ref-368" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>130</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-369" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>0</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-370" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>189</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-371" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>65</_item>
+</a2:DPItemClass>
+<a2:DPIODataClass id="ref-372" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_mcClass>1</_mcClass>
+<_mtType>1</_mtType>
+<_cons>false</_cons>
+<_length>1</_length>
+</a2:DPIODataClass>
+<a2:DPItemClass id="ref-373" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>130</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-374" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>0</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-375" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>189</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-376" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>65</_item>
+</a2:DPItemClass>
+<a2:DPIODataClass id="ref-377" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_mcClass>1</_mcClass>
+<_mtType>1</_mtType>
+<_cons>false</_cons>
+<_length>1</_length>
+</a2:DPIODataClass>
+<a2:DPItemClass id="ref-378" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>130</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-379" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>0</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-380" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>189</_item>
+</a2:DPItemClass>
+<a2:DPItemClass id="ref-381" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_item>65</_item>
+</a2:DPItemClass>
+<a2:DPIODataClass id="ref-382" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_mcClass>1</_mcClass>
+<_mtType>1</_mtType>
+<_cons>false</_cons>
+<_length>1</_length>
+</a2:DPIODataClass>
+<a2:ChannelAttributesClass id="ref-383" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type id="ref-414">dp-io</_type>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-384" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-415"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-385" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-414"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-387" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-416"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-388" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-414"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-390" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-417"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-391" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-414"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-393" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-418"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-394" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-414"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-396" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-419"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-397" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-414"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-399" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-420"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-400" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-414"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-401" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-421"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-402" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-414"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-404" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-422"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-405" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-414"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-407" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-423"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-408" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-414"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-410" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-424"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<a2:ChannelAttributesClass id="ref-411" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_type href="#ref-414"/>
+<_typeName href="#ref-9"/>
+<_indexInParent>-1</_indexInParent>
+</a2:ChannelAttributesClass>
+<a3:ArrayList id="ref-413" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-425"/>
+<_size>8</_size>
+<_version>8</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-415" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-426"/>
+<item href="#ref-427"/>
+<item href="#ref-428"/>
+<item href="#ref-429"/>
+<item href="#ref-430"/>
+<item href="#ref-431"/>
+<item href="#ref-432"/>
+<item href="#ref-433"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-416" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-434"/>
+<item href="#ref-435"/>
+<item href="#ref-436"/>
+<item href="#ref-437"/>
+<item href="#ref-438"/>
+<item href="#ref-439"/>
+<item href="#ref-440"/>
+<item href="#ref-441"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-417" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-442"/>
+<item href="#ref-443"/>
+<item href="#ref-444"/>
+<item href="#ref-445"/>
+<item href="#ref-446"/>
+<item href="#ref-447"/>
+<item href="#ref-448"/>
+<item href="#ref-449"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-418" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-450"/>
+<item href="#ref-451"/>
+<item href="#ref-452"/>
+<item href="#ref-453"/>
+<item href="#ref-454"/>
+<item href="#ref-455"/>
+<item href="#ref-456"/>
+<item href="#ref-457"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-419" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-458"/>
+<item href="#ref-459"/>
+<item href="#ref-460"/>
+<item href="#ref-461"/>
+<item href="#ref-462"/>
+<item href="#ref-463"/>
+<item href="#ref-464"/>
+<item href="#ref-465"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-420" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-466"/>
+<item href="#ref-467"/>
+<item href="#ref-468"/>
+<item href="#ref-469"/>
+<item href="#ref-470"/>
+<item href="#ref-471"/>
+<item href="#ref-472"/>
+<item href="#ref-473"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-421" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-474"/>
+<item href="#ref-475"/>
+<item href="#ref-476"/>
+<item href="#ref-477"/>
+<item href="#ref-478"/>
+<item href="#ref-479"/>
+<item href="#ref-480"/>
+<item href="#ref-481"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-422" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-482"/>
+<item href="#ref-483"/>
+<item href="#ref-484"/>
+<item href="#ref-485"/>
+<item href="#ref-486"/>
+<item href="#ref-487"/>
+<item href="#ref-488"/>
+<item href="#ref-489"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-423" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-490"/>
+<item href="#ref-491"/>
+<item href="#ref-492"/>
+<item href="#ref-493"/>
+<item href="#ref-494"/>
+<item href="#ref-495"/>
+<item href="#ref-496"/>
+<item href="#ref-497"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-424" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-498"/>
+<item href="#ref-499"/>
+<item href="#ref-500"/>
+<item href="#ref-501"/>
+<item href="#ref-502"/>
+<item href="#ref-503"/>
+<item href="#ref-504"/>
+<item href="#ref-505"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-425" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-506"/>
+<item href="#ref-507"/>
+<item href="#ref-508"/>
+<item href="#ref-509"/>
+<item href="#ref-510"/>
+<item href="#ref-511"/>
+<item href="#ref-512"/>
+<item href="#ref-513"/>
+</SOAP-ENC:Array>
+<a2:BitChannelDataClass id="ref-426" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-514">%IX1.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-427" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-515">%IX1.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-428" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-516">%IX1.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-429" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-517">%IX1.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-430" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-518">%IX1.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-431" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-519">%IX1.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-432" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-520">%IX1.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-433" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-521">%IX1.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-434" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-522">%IX2.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-435" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-523">%IX2.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-436" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-524">%IX2.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-437" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-525">%IX2.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-438" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-526">%IX2.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-439" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-527">%IX2.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-440" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-528">%IX2.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-441" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-529">%IX2.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-442" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-530">%IX5.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-443" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-531">%IX5.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-444" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-532">%IX5.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-445" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-533">%IX5.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-446" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-534">%IX5.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-447" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-535">%IX5.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-448" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-536">%IX5.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-449" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-537">%IX5.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-450" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-538">%IX6.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-451" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-539">%IX6.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-452" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-540">%IX6.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-453" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-541">%IX6.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-454" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-542">%IX6.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-455" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-543">%IX6.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-456" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-544">%IX6.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-457" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-545">%IX6.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-458" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-546">%IX7.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-459" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-547">%IX7.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-460" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-548">%IX7.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-461" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-549">%IX7.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-462" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-550">%IX7.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-463" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-551">%IX7.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-464" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-552">%IX7.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-465" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-553">%IX7.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-466" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-554">%IX8.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-467" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-555">%IX8.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-468" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-556">%IX8.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-469" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-557">%IX8.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-470" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-558">%IX8.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-471" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-559">%IX8.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-472" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-560">%IX8.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-473" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-561">%IX8.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-474" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-562">%QX1.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-475" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-563">%QX1.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-476" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-564">%QX1.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-477" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-565">%QX1.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-478" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-566">%QX1.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-479" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-567">%QX1.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-480" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-568">%QX1.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-481" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-569">%QX1.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-482" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-570">%QX5.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-483" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-571">%QX5.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-484" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-572">%QX5.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-485" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-573">%QX5.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-486" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-574">%QX5.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-487" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-575">%QX5.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-488" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-576">%QX5.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-489" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-577">%QX5.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-490" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-578">%QX6.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-491" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-579">%QX6.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-492" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-580">%QX6.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-493" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-581">%QX6.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-494" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-582">%QX6.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-495" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-583">%QX6.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-496" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-584">%QX6.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-497" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-585">%QX6.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-498" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-586">%QX7.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-499" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-587">%QX7.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-500" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-588">%QX7.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-501" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-589">%QX7.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-502" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-590">%QX7.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-503" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-591">%QX7.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-504" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-592">%QX7.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-505" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-593">%QX7.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-506" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-594">%QX8.0</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-507" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-595">%QX8.1</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-508" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-596">%QX8.2</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-509" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-597">%QX8.3</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-510" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-598">%QX8.4</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-511" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-599">%QX8.5</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-512" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-600">%QX8.6</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+<a2:BitChannelDataClass id="ref-513" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/BoschRexroth.IndraLogic.Interfaces/IndraLogic.Interfaces%2C%20Version%3D12.10.86.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_name href="#ref-9"/>
+<_iecAddress id="ref-601">%QX8.7</_iecAddress>
+<_comment href="#ref-9"/>
+</a2:BitChannelDataClass>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,39 @@
+<DiagData DataFormat="2.0.0">
+  <ConfigData DataFormat="1.1.0">
+    <Changed Value="1" />
+    <Data DataFormat="3.2.0">
+      <Common EnableDiag="0" CreateDiagData="1" />
+      <TextData>
+        <Languages />
+        <ProVi Message="Used" Further="Used" />
+        <Sfc Message="Used" />
+      </TextData>
+    </Data>
+  </ConfigData>
+  <TextData DataFormat="1.1.0">
+    <Changed Value="1" />
+    <Data Guid="542809d6-f581-42c4-b938-084fb2531666" DataFormat="4.0.0">
+      <DiagType />
+      <Text>
+        <CReason />
+        <CRecovery />
+        <CUserNotes />
+        <CMessagePool />
+      </Text>
+      <Filter>
+        <CCategory>
+          <CFilter />
+          <CArea />
+        </CCategory>
+        <CGroup>
+          <CFilter />
+          <CArea />
+        </CGroup>
+      </Filter>
+    </Data>
+  </TextData>
+  <ModuleAssignData DataFormat="1.1.0">
+    <Changed Value="1" />
+    <Data DataFormat="1.0.0"><![CDATA[]]></Data>
+  </ModuleAssignData>
+</DiagData>

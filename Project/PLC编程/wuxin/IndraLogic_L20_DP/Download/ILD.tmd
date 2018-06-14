@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Data Guid="542809d6-f581-42c4-b938-084fb2531666" DataFormat="4.0.0">
+  <DiagType />
+  <Text>
+    <CReason />
+    <CRecovery />
+    <CUserNotes />
+    <CMessagePool />
+  </Text>
+  <Filter>
+    <CCategory>
+      <CFilter />
+      <CArea />
+    </CCategory>
+    <CGroup>
+      <CFilter />
+      <CArea />
+    </CGroup>
+  </Filter>
+</Data>

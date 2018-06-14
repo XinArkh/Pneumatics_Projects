@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<CoDeSysSymbolTable>
+	<SymbolHeader>
+		<Version>-1</Version>
+		<ProjectId>70467</ProjectId>
+		<WorkbenchVersion>2.3.9.40</WorkbenchVersion>
+		<CompilerVersion>2.3.9.40</CompilerVersion>
+	</SymbolHeader>
+	<SymbolTypeList/>
+	<SymbolVarList/>
+	<SymbolTaskList>
+		<Task Priority="1" Interval="0" Event="" POUIndex="128" ProgramName="PLC_PRG();">NewTask</Task>
+	</SymbolTaskList>
+	<SymbolTargetSettings>
+		<MaxNumberOfPOUs>2048</MaxNumberOfPOUs>
+		<Segments>
+			<Segment Area="0" RefId="0" Address="0" Size="8192" Attributes="0"/>
+			<Segment Area="0" RefId="1" Address="8192" Size="8192" Attributes="0"/>
+			<Segment Area="0" RefId="2" Address="16384" Size="8192" Attributes="0"/>
+			<Segment Area="1" RefId="3" Address="0" Size="65396" Attributes="2"/>
+			<Segment Area="0" RefId="4" Address="24576" Size="2097152" Attributes="1"/>
+		</Segments>
+	</SymbolTargetSettings>
+</CoDeSysSymbolTable>

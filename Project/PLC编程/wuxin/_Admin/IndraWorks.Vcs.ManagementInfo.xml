@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" IndraWorksVersion="12.12.331.0" CompatibilityVersion="10.6" xmlns="http://www.boschrexroth.de/indraworks.textformatter.xsd">
+  <VcsInfoManager id="ref-1">
+    <ProjectRepository />
+    <MnoVcsInfos xsi:type="Array" id="ref-2" />
+  </VcsInfoManager>
+</root>

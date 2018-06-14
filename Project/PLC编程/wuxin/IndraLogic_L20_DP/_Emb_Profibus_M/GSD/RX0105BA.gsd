@@ -1,0 +1,1235 @@
+;******************************************************************************
+;      Bosch Rexroth AG
+;      Electric Drives and Controls
+;      Berliner Str. 25
+;      64711 Erbach, Germany
+;
+;      www.boschrexroth.com
+;******************************************************************************
+; GSD-File for: DP-Slave, Rexroth Inline, R-IL PB BK DP/V1 (usage with DIP8 = OFF) 
+; Device      : R-IL PB BK DP/V1 / R-IL PB BK DP/V1-PAC
+; Material-No.: R911308486 / R911170971
+; Index       : 101 / 101
+; Hardware-Release : 02
+; Firmware-Release : B (42 hex)
+;******************************************************************************
+; File Name   : RX0105BA.GSD
+; File Version: 1.11
+; File Date   : 17.10.2012
+;******************************************************************************
+;************** File History **************************************************
+; Date          File Version
+; 25.02.2005    1.01         First Release
+; 28.02.2005                 Insert module number
+;                            Rename error type
+; 12.05.2005                 Insert module RS 232-PRO
+;                            Change module identifier RS 485/422-PRO
+; 31.05.2005    1.02         Base 1.09
+;                            Insert Disclaimer
+;                            Change Vendor_Name
+;                            Change Slave_Family
+;                            Add baudrate 45.45 kBaud
+;                            Change MaxTsdr
+;                            Change Ext_User_Prm_Data_Const(0)
+; 23.07.2007    1.03         Base 1.15
+;                            Data Exchange Mode: change default
+;                            New modules: packed DI 2-NPN, AO 4/8/U/BP, AO 2/SF,
+;                            AO 2/I/S7, AI 4/EF, SGI 2/EF, TEMP 4/8 RTD, TEMPCON UTH,
+;                            TEMPCON 300 UTH, TEMPCON 300 UTH-B, FLM modules
+; 23.07.2007    1.04         Insert module DDL
+; 25.07.2007    1.05         TEMPCON UTH and TEMPCON 300 UTH corrected
+; 07.01.2010    1.06         Duplicated module AO 2/SF deleted
+; 18.02.2011    1.07         Added: R-IB IL 24 DO 8/HD, R-IB IL 24 DO 32/HD, 
+;                            R-IB IL 24 DI 8/HD, R-IB IL 24 DI 32/HD, R-IB IL 24 IOL 4 DI 12, 
+;                            R-IB IL AO 1/SF/CN, R-IB IL AO 2/SF/CN
+; 06.05.2011  1.08  New modules of V1.07 moved to the end (error 122838)
+; 11.08.2011  1.09  Rexroth -> Bosch Rexroth AG
+;                   Added: R-IB IL 24 DO 32/HD-NPN, R-IB IL 24 DI 32/HD-NPN
+; 07.02.2012  1.10  New modules R-IB IL AI 4/U and R-IB IL AI 4/I
+;                   OrderNumber and Info_Text added
+; 17.10.2012  1.11  New Modules: R-IB IL DALI/PWR, R-IB IL DALI, 
+;                                R-IB IL TEMP 4/8 RTD/EF, R-IB IL AO 2/UI
+;                            
+;******************************************************************************
+;******************************************************************************
+;
+;      DISCLAIMER:
+;      ===========
+;
+;      DO NOT MODIFY THIS FILE!
+;      CHANGING PROFIBUS PARAMETERS CAN LEAD TO UNDEFINED SYSTEM BEHAVIOUR
+;
+;******************************************************************************
+
+#Profibus_DP
+
+;*************************************************************************
+; General Data
+;*************************************************************************
+
+
+GSD_REVISION = 2                                              ; version ID of the GSD file format
+Vendor_Name = "Bosch Rexroth AG"                              ; manufacturer name
+Model_Name = "R-IL PB BK DP/V1 (DIP8=OFF)"                    ; device name
+Revision = "V2.0"                                             ; device revision 
+Ident_Number = 0x05BA                                         ; product ID
+Slave_Family = 3@Rexroth@Inline                               ; device family class
+Protocol_Ident = 0                                            ; protocol ID of the device
+Station_Type = 0                                              ; device type
+FMS_supp = 0                                                  ; no DP/FMS mixed device
+Hardware_Release = "V2.0"                                     ; hardware revision
+Software_Release = "B"                                        ; software revision
+Bitmap_Device = "RX_R05BA"                                    ; device bitmap - normal state
+Bitmap_Diag = "RX_D05BA"                                      ; device bitmap - diagnostic state
+Bitmap_SF = "RX_S05BA"                                        ; device bitmap - special (passive) state
+
+OrderNumber = "R911170971"                                    ; Bosch Rexroth order number of the device 
+Info_Text= "Inline bus coupler for Profibus-DP, usage with DIP8 = OFF. Modular extension possible using Inline terminals. GSD file version 1.11"
+
+9.6_supp = 1                                                  ; supported baudrates
+19.2_supp = 1
+45.45_supp = 1
+93.75_supp = 1
+187.5_supp = 1
+500_supp = 1
+1.5M_supp = 1
+3M_supp = 1
+6M_supp = 1
+12M_supp = 1
+
+MaxTsdr_9.6 = 15                                              ; device respond times
+MaxTsdr_19.2 = 15
+MaxTsdr_45.45 = 15
+MaxTsdr_93.75 = 15
+MaxTsdr_187.5 = 15
+MaxTsdr_500 = 15
+MaxTsdr_1.5M = 25
+MaxTsdr_3M = 50
+MaxTsdr_6M = 100
+MaxTsdr_12M = 200
+
+Redundancy = 0                                                ; no redundancy
+Repeater_Ctrl_Sig = 2                                         ; RTS available
+
+Modul_Offset = 0                                              ; 1. Slot number for HW config tool
+
+
+;*********   modular device   ********************************************
+
+Modular_Station = 1                                           ; modular device
+Max_Module = 63                                               ; max 63 modules
+Max_Input_Len = 184                                           ; max 184 Byte input data
+Max_Output_Len = 184                                          ; max 184 Byte output data
+Max_Data_Len = 184                                            ; max sum: 184 Byte input and output data
+
+;*************************************************************************
+; Parameter Data of DP Slave
+;*************************************************************************
+
+PrmText = 1
+Text(0) = "Local Bus: Run"
+Text(1) = "Local Bus: Stop"
+EndPrmText
+
+PrmText = 2
+Text(0) = "automatically"
+Text(1) = "manually"
+EndPrmText
+
+PrmText = 3
+Text(0) = "Byte 0-1 = Plug 4/3-2/1"
+Text(1) = "Byte 0-1 = Plug 2/1-4/3"
+EndPrmText
+
+PrmText = 4
+Text(0) = "On Global Control Operate only"
+Text(1) = "Without Global Control Operate"
+EndPrmText
+
+PrmText = 5
+Text(0) = "Byte 0/1/2/3 = Plug 4/3/2/1"
+Text(1) = "Byte 0/1/2/3 = Plug 1/2/3/4"
+EndPrmText
+
+;*************************************************************************
+; Parameter Data Options and Positions
+;*************************************************************************
+
+ExtUserPrmData = 1 "Station Behaviour on Errors"
+Bit(0) 0 0-1
+Prm_Text_Ref = 1
+EndExtUserPrmData
+
+ExtUserPrmData = 2 "Acknowledge of peripheral Faults"
+Bit(1) 0 0-1
+Prm_Text_Ref = 2
+EndExtUserPrmData
+
+ExtUserPrmData = 3 "DI16/DO16 byte position"
+Bit(4) 0 0-1
+Prm_Text_Ref = 3
+EndExtUserPrmData
+
+ExtUserPrmData = 4 "Data Exchange Mode"
+Bit(5) 1 0-1
+Prm_Text_Ref = 4
+EndExtUserPrmData
+
+ExtUserPrmData = 5 "DI32/DO32 byte position"
+Bit(6) 0 0-1
+Prm_Text_Ref = 5
+EndExtUserPrmData
+
+;*************************************************************************
+; Specific Data of Slave
+;*************************************************************************
+
+Freeze_Mode_supp = 1                                         ; device supports freeze mode
+Sync_Mode_supp = 1                                           ; device supports sync mode
+Auto_Baud_supp = 1                                           ; automatic baud rate recognition
+Min_Slave_Intervall = 2                                      ; min cycle time 0.2ms
+Max_Diag_Data_Len = 16                                       ; max length of diagnostic data
+Max_User_Prm_Data_Len = 1                                    ; length of User_Prm_Data
+
+Ext_User_Prm_Data_Const(0) = 0x20                            ; 1 Byte for coupler parameter
+
+Ext_User_Prm_Data_Ref(0) = 1
+Ext_User_Prm_Data_Ref(0) = 2
+Ext_User_Prm_Data_Ref(0) = 3
+Ext_User_Prm_Data_Ref(0) = 4
+Ext_User_Prm_Data_Ref(0) = 5
+
+;*********   PD-PCP (VC1)  ***********************************************
+
+
+Module="PD-PCP 4 words" 0xF3
+0x101
+EndModule
+
+Module="PD-PCP 6 words" 0xF5
+0x102
+EndModule
+
+Module="PD-PCP 8 words" 0xF7
+0x103
+EndModule
+
+Module="PD-PCP 10 words" 0xF9
+0x104
+EndModule
+
+Module="PD-PCP 12 words" 0xFB
+0x105
+EndModule
+
+Module="PD-PCP 14 words" 0xFD
+0x106
+EndModule
+
+Module="PD-PCP 16 words" 0xFF
+0x107
+EndModule
+
+;*********   digital output modules  *************************************
+
+Module="R-IB IL 24/230 DOR 1/W" 0x82,0x00,0xBD,0xC2
+0x00
+EndModule
+
+Module="R-IB IL 24/230 DOR 1/W-PC" 0x82,0x00,0xBD,0xC2
+0x01
+EndModule
+
+Module="R-IB IL 24/48 DOR 2/W" 0x82,0x00,0xBD,0xC2
+0x02
+EndModule
+
+Module="R-IB IL 24/230 DOR 4/W" 0x82,0x00,0xBD,0x41
+0x03
+EndModule
+
+Module="R-IB IL 24/230 DOR 4/W-PC" 0x82,0x00,0xBD,0x41
+0x04
+EndModule
+
+Module="R-IB IL DO 1 AC" 0x82,0x00,0xBD,0xC2
+0x05
+EndModule
+
+Module="R-IB IL DO 4 AC-1A" 0x82,0x00,0xBD,0x41
+0x06
+EndModule
+
+Module="R-IB IL 24 DO 2" 0x82,0x00,0xBD,0xC2
+0x07
+EndModule
+
+Module="R-IB IL 24 DO 2-2A" 0x82,0x00,0xBD,0xC2
+0x08
+EndModule
+
+Module="R-IB IL 24 DO 2-NPN" 0x82,0x00,0xBD,0xC2
+0x09
+EndModule
+
+Module="R-IB IL 24 EDO 2" 0xC2,0x00,0x00,0xBF,0x41
+0x0a
+EndModule
+
+Module="R-IB IL 24 DO 4" 0x82,0x00,0xBD,0x41
+0x0b
+EndModule
+
+Module="R-IB IL 24 DO 4-ME" 0x82,0x00,0xBD,0x41
+0x0c
+EndModule
+
+Module="R-IB IL 24 DO 8" 0x82,0x00,0xBD,0x81
+0x0d
+EndModule
+
+Module="R-IB IL 24 DO 8-2A" 0x82,0x00,0xBD,0x81
+0x0e
+EndModule
+
+Module="R-IB IL 24 DO 8-NPN" 0x82,0x00,0xBD,0x81
+0x0f
+EndModule
+
+Module="R-IB IL 24 DO 16" 0x82,0x01,0xBD,0x01
+0x10
+EndModule
+
+Module="R-IB IL 24 DO 32" 0x82,0x03,0xBD,0x02
+0x11
+EndModule
+
+;position moved to the end:
+;Module="R-IB IL 24 DO 32/HD" 0x82,0x03,0xBD,0x02
+;0x12
+;EndModule
+
+;position moved to the end:
+;Module="R-IB IL 24 DO 8/HD" 0x82,0x00,0xBD,0x81
+;0x13
+;EndModule
+
+;*********   digital output modules, packed  ************************
+
+Module="R-IB IL 24/230DOR1/W QTY.2 4 Bit" 0x83,0x00,0xBD,0xC2,0x02
+0x20
+EndModule
+
+Module="R-IB IL 24/230DOR1/W QTY.3 6 Bit" 0x83,0x00,0xBD,0xC2,0x03 
+0x21
+EndModule
+
+Module="R-IB IL 24/230DOR1/W QTY.4 8 Bit" 0x83,0x00,0xBD,0xC2,0x04 
+0x22
+EndModule
+
+Module="R-IB IL24/230DOR1/W-PC QTY2 4Bit" 0x83,0x00,0xBD,0xC2,0x02
+0x23
+EndModule
+
+Module="R-IB IL24/230DOR1/W-PC QTY3 6Bit" 0x83,0x00,0xBD,0xC2,0x03 
+0x24
+EndModule
+
+Module="R-IB IL24/230DOR1/W-PC QTY4 8Bit" 0x83,0x00,0xBD,0xC2,0x04 
+0x25
+EndModule
+
+Module="R-IB IL 24/48DOR2/W QTY.2 4 Bit" 0x83,0x00,0xBD,0xC2,0x02
+0x26
+EndModule
+
+Module="R-IB IL 24/48DOR2/W QTY.3 6 Bit" 0x83,0x00,0xBD,0xC2,0x03 
+0x27
+EndModule
+
+Module="R-IB IL 24/48DOR2/W QTY.4 8 Bit" 0x83,0x00,0xBD,0xC2,0x04 
+0x28
+EndModule
+
+Module="R-IB IL 24/230DOR4/W QTY.2 8 Bit" 0x83,0x00,0xBD,0x41,0x02
+0x29
+EndModule
+
+Module="R-IB IL 24/230DOR4/W QTY.4 16Bit" 0x83,0x01,0xBD,0x41,0x04
+0x2a
+EndModule
+
+Module="R-IB IL DO 1 AC (QTY.2) 4 Bit" 0x83,0x00,0xBD,0xC2,0x02
+0x2b
+EndModule
+
+Module="R-IB IL DO 1 AC (QTY.3) 6 Bit" 0x83,0x00,0xBD,0xC2,0x03 
+0x2c
+EndModule
+
+Module="R-IB IL DO 1 AC (QTY.4) 8 Bit" 0x83,0x00,0xBD,0xC2,0x04 
+0x2d
+EndModule
+
+Module="R-IB IL DO 4 AC-1A (QTY.2) 8 Bit" 0x83,0x00,0xBD,0x41,0x02
+0x2e
+EndModule
+
+Module="R-IB IL DO 4 AC-1A (QTY.4) 16Bit" 0x83,0x01,0xBD,0x41,0x04
+0x2f
+EndModule
+
+Module="R-IB IL 24 DO 2 (QTY.2) 4 Bit" 0x83,0x00,0xBD,0xC2,0x02
+0x30
+EndModule
+
+Module="R-IB IL 24 DO 2 (QTY.3) 6 Bit" 0x83,0x00,0xBD,0xC2,0x03 
+0x31
+EndModule
+
+Module="R-IB IL 24 DO 2 (QTY.4) 8 Bit" 0x83,0x00,0xBD,0xC2,0x04 
+0x32
+EndModule
+
+Module="R-IB IL 24 EDO 2 (QTY.2) 8 Bit" 0xC3,0x00,0x00,0xBF,0x41,0x02
+0x33
+EndModule
+
+Module="R-IB IL 24 EDO 2 (QTY.4) 16 Bit" 0xC3,0x01,0x01,0xBF,0x41,0x04
+0x34
+EndModule
+
+Module="R-IB IL 24 DO 4 (QTY.2) 8 Bit" 0x83,0x00,0xBD,0x41,0x02
+0x35
+EndModule
+
+Module="R-IB IL 24 DO 4 (QTY.4) 16Bit" 0x83,0x01,0xBD,0x41,0x04
+0x36
+EndModule
+
+Module="R-IB IL 24 DO 4-ME (QTY.2) 8 Bit" 0x83,0x00,0xBD,0x41,0x02
+0x37
+EndModule
+
+Module="R-IB IL 24 DO 4-ME (QTY.4) 16Bit" 0x83,0x01,0xBD,0x41,0x04
+0x38
+EndModule
+
+Module="R-IB IL 24 DO 8 (QTY.2) 16 Bit" 0x83,0x01,0xBD,0x81,0x02
+0x39
+EndModule
+
+;*********   digital input modules  *******************************
+
+Module="R-IB IL 120 DI 1" 0x42,0x00,0xBE,0xC2
+0x40
+EndModule
+
+Module="R-IB IL 120 DI 2" 0x42,0x00,0xBE,0xC2
+0x41
+EndModule
+
+Module="R-IB IL 230 DI 1" 0x42,0x00,0xBE,0xC2
+0x42
+EndModule
+
+Module="R-IB IL 24 DI 2" 0x42,0x00,0xBE,0xC2
+0x43
+EndModule
+
+Module="R-IB IL 24 DI 2-NPN" 0x42,0x00,0xBE,0xC2
+0x44
+EndModule
+
+Module="R-IB IL 24 EDI 2" 0x42,0x00,0xBE,0xC2
+0x45
+EndModule
+
+Module="R-IB IL 24 EDI 2-DESINA" 0x42,0x00,0xBE,0x41
+0x46
+EndModule
+
+Module="R-IB IL 24 DI 4" 0x42,0x00,0xBE,0x41
+0x47
+EndModule
+
+Module="R-IB IL 24 DI 4-ME" 0x42,0x00,0xBE,0x41
+0x48
+EndModule
+
+Module="R-IB IL 24 DI 8" 0x42,0x00,0xBE,0x81
+0x49
+EndModule
+
+Module="R-IB IL 24 DI 8-T2" 0x42,0x00,0xBE,0x81
+0x4a
+EndModule
+
+Module="R-IB IL 24 DI 16" 0x42,0x01,0xBE,0x01
+0x4b
+EndModule
+
+Module="R-IB IL 24 DI 16-NPN" 0x42,0x01,0xBE,0x01
+0x4c
+EndModule
+
+Module="R-IB IL 24 DI 32" 0x42,0x03,0xBE,0x02
+0x4d
+EndModule
+
+;position moved to the end:
+;Module="R-IB IL 24 DI 32/HD" 0x42,0x03,0xBE,0x02
+;0x4e
+;EndModule
+
+;position moved to the end:
+;Module="R-IB IL 24 DI 8/HD" 0x42,0x00,0xBE,0x81
+;0x4f
+;EndModule
+
+;*********   digital input modules, packed  ***********************
+
+Module="R-IB IL 24 DI 2 (QTY.2) 4 Bit" 0x43,0x00,0xBE,0xC2,0x02
+0x60
+EndModule
+
+Module="R-IB IL 24 DI 2 (QTY.3) 6 Bit" 0x43,0x00,0xBE,0xC2,0x03
+0x61
+EndModule
+
+Module="R-IB IL 24 DI 2 (QTY.4) 8 Bit" 0x43,0x00,0xBE,0xC2,0x04
+0x62
+EndModule
+
+Module="R-IB IL 24 DI 2-NPN QTY.2 4 Bit" 0x43,0x00,0xBE,0xC2,0x02
+0x68
+EndModule
+
+Module="R-IB IL 24 DI 2-NPN QTY.3 6 Bit" 0x43,0x00,0xBE,0xC2,0x03
+0x69
+EndModule
+
+Module="R-IB IL 24 DI 2-NPN QTY.4 8 Bit" 0x43,0x00,0xBE,0xC2,0x04
+0x6A
+EndModule
+
+Module="R-IB IL 24 DI 4 (QTY.2) 8 Bit" 0x43,0x00,0xBE,0x41,0x02
+0x63
+EndModule
+
+Module="R-IB IL 24 DI 4 (QTY.4) 16Bit" 0x43,0x01,0xBE,0x41,0x04
+0x64
+EndModule
+
+Module="R-IB IL 24 DI 4-ME (QTY.2) 8 Bit" 0x43,0x00,0xBE,0x41,0x02
+0x65
+EndModule
+
+Module="R-IB IL 24 DI 4-ME (QTY.4) 16Bit" 0x43,0x01,0xBE,0x41,0x04
+0x66
+EndModule
+
+Module="R-IB IL 24 DI 8 (QTY.2) 16Bit" 0x43,0x01,0xBE,0x81,0x02
+0x67
+EndModule
+
+
+;*********   analog output modules   ******************************
+
+Module="R-IB IL AO 1/SF" 0x82,0x40,0x7D,0x01
+0x70
+EndModule
+
+Module="R-IB IL AO 1/U/SF" 0x82,0x40,0x7D,0x01
+0x71
+EndModule
+
+Module="R-IB IL AO 2/U/BP" 0xC2,0x41,0x41,0x5B,0x02
+0x72
+EndModule
+
+Module="R-IB IL AO 2/U/BP-ME" 0xC2,0x41,0x41,0x5B,0x02
+0x73
+EndModule
+
+;position moved to the end:
+;Module="R-IB IL AO 2/UI" 0xC2,0x43,0x43,0x5B,0x04
+;0x7A
+;EndModule
+
+Module="R-IB IL AO 2/SF" 0xC2,0x41,0x41,0x5B,0x02
+0x74
+EndModule
+
+Module="R-IB IL AO 2/I/S7" 0xC2,0x41,0x41,0x5B,0x02
+0x75
+EndModule
+
+; Module is the same as number 0x74. Deleted and number 0x76 reserved.
+;Module="R-IB IL AO 2/SF" 0xC2,0x41,0x41,0x5B,0x02
+;0x76
+;EndModule
+
+Module="R-IB IL AO 4/8/U/BP" 0xC2,0xC4,0xC4,0xDF,0x05
+0x77
+EndModule
+
+;position moved to the end:
+;Module="R-IB IL AO 1/SF/CN" 0x82,0x40,0x7D,0x01
+;0x78
+;EndModule
+
+;position moved to the end:
+;Module="R-IB IL AO 2/SF/CN" 0xC2,0x41,0x41,0x5B,0x02
+;0x79
+;EndModule
+
+
+;*********   analog input modules  ********************************
+
+Module="R-IB IL AI 2/SF" 0xC2,0x41,0x41,0x7F,0x02
+0x90
+EndModule
+
+Module="R-IB IL AI 2/SF-ME" 0xC2,0x41,0x41,0x7F,0x02
+0x91
+EndModule
+
+Module="R-IB IL AI 2/SF-230" 0xC2,0x41,0x41,0x7F,0x02
+0x92
+EndModule
+
+Module="R-IB IL AI 2/4-20mA" 0xC2,0x41,0x41,0x7F,0x02
+0x93
+EndModule
+
+Module="R-IB IL AI 2 HART" 0xC2,0x41,0x41,0xDC,0x02
+0x94
+EndModule
+
+Module="R-IB IL AI 4/EF" 0xC2,0xC4,0xC4,0xDF,0x05
+0x9A
+EndModule
+
+Module="R-IB IL AI 8/SF" 0xC2,0xC1,0xC1,0x5F,0x02
+0x95
+EndModule
+
+Module="R-IB IL AI 8/IS" 0xC2,0xC1,0xC1,0x5F,0x02
+0x96
+EndModule
+
+Module="R-IB IL SGI 2/F" 0xC2,0xC2,0xC2,0xDF,0x03
+0x9B
+EndModule
+
+Module="R-IB IL TEMP 2 RTD" 0xC2,0x41,0x41,0x7F,0x02
+0x97
+EndModule
+
+Module="R-IB IL TEMP 2 RTD/300" 0xC2,0x41,0x41,0x7F,0x02
+0x98
+EndModule
+
+Module="R-IB IL TEMP 4/8 RTD" 0xC2,0xC4,0xC4,0xDF,0x05
+0x9C
+EndModule
+
+;position moved to the end:
+;Module="R-IB IL TEMP 4/8 RTD/EF" 0xC2,0xC4,0xC4,0xDF,0x05
+;0x9F
+;EndModule
+
+Module="R-IB IL TEMP 2 UTH" 0xC2,0x41,0x41,0x7F,0x02
+0x99
+EndModule
+
+;position moved to the end:
+;Module="R-IB IL AI 4/U" 0xC2,0x43,0x43,0x7F,0x04
+;0x9D
+;EndModule
+
+;position moved to the end:
+;Module="R-IB IL AI 4/I" 0xC2,0x43,0x43,0x7F,0x04
+;0x9E
+;EndModule
+
+;*********   power-level terminals   ******************************
+
+Module="R-IB IL 24 TC" 0x42,0x00,0xBE,0x41
+0xb0
+EndModule
+
+Module="R-IB IL 400 ELR 1-3A" 0xC2,0x00,0x00,0xBF,0x81
+0xb1
+EndModule
+
+Module="R-IB IL 400 ELR R-3A" 0xC2,0x00,0x00,0xBF,0x81
+0xb2
+EndModule
+
+Module="R-IB IL 400 MLR 1-8A" 0xC2,0x00,0x00,0xBF,0x81
+0xb3
+EndModule
+
+;*********   special function modules   ***************************
+
+Module="R-IB IL CNT" 0xC2,0xC1,0xC1,0xBF,0x02
+0xc0
+EndModule
+
+Module="R-IB IL INC" 0xC2,0xC1,0xC1,0xBF,0x02
+0xc1
+EndModule
+
+Module="R-IB IL INC IN" 0xC2,0xC1,0xC1,0x7F,0x02
+0xc2
+EndModule
+
+Module="R-IB IL SSI" 0xC2,0xC1,0xC1,0xBF,0x02
+0xc3
+EndModule
+
+Module="R-IB IL SSI-IN" 0xC2,0xC1,0xC1,0x5F,0x02
+0xc4
+EndModule
+
+Module="R-IB IL IMPULSE-IN" 0xC2,0xC1,0xC1,0x5F,0x02
+0xc5
+EndModule
+
+Module="R-IB IL PWM/2" 0xC2,0xC1,0xC1,0xBF,0x02
+0xc6
+EndModule
+
+Module="R-IB IL RS 232" 0xC2,0xC0,0xC0,0xDC,0x01
+0xc7
+EndModule
+
+Module="R-IB IL RS 232-PRO" 0xC2,0x8b,0x8b,0xBF,0x06
+0xd0
+EndModule
+
+Module="R-IB IL RS 485" 0xC2,0xC0,0xC0,0xDC,0x01
+0xc8
+EndModule
+
+Module="R-IB IL RS 485/422-PRO" 0xC2,0x8b,0x8b,0xBF,0x06
+0xd1
+EndModule
+
+Module="R-IB IL POS 200" 0xC2,0x09,0x09,0xDF,0x05
+0xca
+EndModule
+
+Module="R-IB IL DC AR 48/10A" 0xC2,0xC1,0xC1,0xC3,0x02
+0xcb
+EndModule
+
+Module="R-IB IL EC AR 48/10A" 0xC2,0xC2,0xC2,0xC3,0x03
+0xcc
+EndModule
+
+Module="R-IB IL TEMPCON RTD" 0xC2,0xC1,0xC1,0xBF,0x02
+0xcd
+EndModule
+
+Module="R-IB IL TEMPCON UTH" 0xC2,0xC1,0xC1,0xBF,0x02
+0xce
+EndModule
+
+Module="R-IB IL TEMPCON 300 UTH" 0xC2,0xC1,0xC1,0xDD,0x02
+0xd3
+EndModule
+
+Module="R-IB IL TEMPCON 300 UTH-B" 0xC2,0xC1,0xC1,0xDD,0x02
+0xd2
+EndModule
+
+Module="R-IB IL 24 SAFE 1" 0x42,0x00,0xBE,0xC2
+0xcf
+EndModule
+
+
+;*********   IO-Link modules   **************************
+
+;position moved to the end:
+;Module="R-IB IL 24 IOL 4 DI 12" 0xC2,0x45,0x45,0xDF,0x06
+;0xde
+;EndModule
+
+;*********   Gateway module   **********************************	
+
+Module="R-IB IL DDL" 0xC2,0x07,0x07,0xBF,0x04    
+0xdf
+EndModule
+
+
+;*********   ASI-Gateway module   *********************************
+
+Module="R-ASI MA IB IL 6 Byte" 0xC2,0x05,0x05,0xDF,0x03
+0xe0
+EndModule
+
+Module="R-ASI MA IB IL 10 Byte" 0xC2,0x09,0x09,0xDF,0x05
+0xe1
+EndModule
+
+Module="R-ASI MA IB IL 14 Byte" 0xC2,0x0D,0x0D,0xDF,0x07
+0xe2
+EndModule
+
+Module="R-ASI MA IB IL 18 Byte" 0xC2,0x11,0x11,0xDF,0x09
+0xe3
+EndModule
+
+Module="R-ASI MA IB IL 22 Byte" 0xC2,0x15,0x15,0xDF,0x0B
+0xe4
+EndModule
+
+Module="R-ASI MA IB IL 26 Byte" 0xC2,0x19,0x19,0xDF,0x0D
+0xe5
+EndModule
+
+Module="R-ASI MA IB IL 30 Byte" 0xC2,0x1D,0x1D,0xDF,0x0F
+0xe6
+EndModule
+
+
+;*********   DALI-Gateway module   **********************************	
+
+;position moved to the end:
+;Module="R-IB IL DALI/PWR" 0xC2,0xC1,0xC1,0xBF,0x02
+;0xe7
+;EndModule
+
+;position moved to the end:
+;Module="R-IB IL DALI" 0xC2,0xC1,0xC1,0xBF,0x02
+;0xe8
+;EndModule
+
+
+;*********   power- and segment terminals   ***********************
+
+Module="R-IB IL 24 PWR IN/F-D" 0x42,0x00,0xBE,0xC2
+0xf0
+EndModule
+
+Module="R-IB IL 24 PWR IN/2-F-D" 0x42,0x00,0xBE,0xC2
+0xf1
+EndModule
+
+Module="R-IB IL 24 SEG/F-D" 0x42,0x00,0xBE,0xC2
+0xf2
+EndModule
+
+Module="R-IB IL 24 SEG-ELF" 0x42,0x00,0xBE,0xC2
+0xf3
+EndModule
+
+
+;*********   FLM M8 modules  **********************************
+
+Module="R-FLM DI 8 M8" 0x42,0x00,0xB2,0x81
+0xf4
+EndModule
+
+Module="R-FLM DI 8 M8 (QTY.2) 16Bit" 0x43,0x01,0xB2,0x81,0x02
+0xf5
+EndModule
+
+Module="R-FLM DIO 8/4 M8" 0xC2,0x00,0x00,0xB3,0x81
+0xf6
+EndModule
+
+Module="R-FLM DO 4 M8-2A" 0x82,0x00,0xB1,0x41
+0xf7
+EndModule
+
+Module="R-FLM DO 4 M8-2A (QTY.2) 8 Bit" 0x83,0x00,0xB1,0x41,0x02
+0xf8
+EndModule
+
+Module="R-FLM DO 4 M8-2A (QTY.3) 12 Bit" 0x83,0x01,0xB1,0x41,0x03
+0xf9
+EndModule
+
+Module="R-FLM DO 4 M8-2A (QTY.4) 16 Bit" 0x83,0x01,0xB1,0x41,0x04
+0xfa
+EndModule
+
+
+;****************************************************************
+;*********   New modules insertes at the end  *******************
+
+Module="R-IB IL 24 DO 32/HD" 0x82,0x03,0xBD,0x02
+0x12
+EndModule
+
+Module="R-IB IL 24 DO 8/HD" 0x82,0x00,0xBD,0x81
+0x13
+EndModule
+
+Module="R-IB IL 24 DI 32/HD" 0x42,0x03,0xBE,0x02
+0x4e
+EndModule
+
+Module="R-IB IL 24 DI 8/HD" 0x42,0x00,0xBE,0x81
+0x4f
+EndModule
+
+Module="R-IB IL AO 1/SF/CN" 0x82,0x40,0x7D,0x01
+0x78
+EndModule
+
+Module="R-IB IL AO 2/SF/CN" 0xC2,0x41,0x41,0x5B,0x02
+0x79
+EndModule
+
+Module="R-IB IL 24 IOL 4 DI 12" 0xC2,0x45,0x45,0xDF,0x06
+0xde
+EndModule
+;Br
+Module="R-IB IL 24 DO 32/HD-NPN" 0x82,0x03,0xBD,0x02
+0x14
+EndModule
+
+Module="R-IB IL 24 DI 32/HD-NPN" 0x42,0x03,0xBE,0x02
+0x50
+EndModule
+
+Module="R-IB IL AI 4/U" 0xC2,0x43,0x43,0x7F,0x04
+0x9D
+EndModule
+
+Module="R-IB IL AI 4/I" 0xC2,0x43,0x43,0x7F,0x04
+0x9E
+EndModule
+
+Module="R-IB IL DALI/PWR" 0xC2,0xC1,0xC1,0xBF,0x02
+0xe7
+EndModule
+
+Module="R-IB IL DALI" 0xC2,0xC1,0xC1,0xBF,0x02
+0xe8
+EndModule
+
+Module="R-IB IL TEMP 4/8 RTD/EF" 0xC2,0xC4,0xC4,0xDF,0x05
+0x9F
+EndModule
+
+Module="R-IB IL AO 2/UI" 0xC2,0x43,0x43,0x5B,0x04
+0x7A
+EndModule
+
+;*************************************************************************
+; Slave specific Diagnostics
+;*************************************************************************
+
+
+;*********   PROFIBUS standard diagnostics
+
+; Byte 0   station state 1
+; Byte 1   station state 2
+; Byte 2   station state 3
+; Byte 3   PROFIBUS master address
+; Byte 4   00H (manufacturers ID high Byte)
+; Byte 5   F0H (manufacturers ID low Byte)
+
+
+;*********   device specific diagnostics
+
+; Byte 6   0AH (Header Byte, number of following byte)
+; Byte 7   00H (type of diagnostics)
+; Byte 8   firmware revision, ASCII coded
+; Byte 9   error type
+; Byte 10  error number
+; meaning of error type-error number:
+; 1:    parameterization error PROFIBUS
+; 1-1:  wrong slot number
+; 1-2:  parameter block (failsafe or configuration) is incomplete
+; 1-3:  data length of a parameter block is too small
+; 1-4:  data length of a parameter block is too large
+; 1-5:  internal block length (failsafe and configuration) is too small
+; 1-6:  header byte of parameterblock is incorrect
+; 1-7:  PCP-initialization for a module without PCP functionality
+; 1-8:  too many data blocks for the module
+; 1-9:  incomplete parameter data of inactive Module
+; 2:    configuration error PROFIBUS
+; 2-1:  less modules configured than connected
+; 2-2:  less modules connected than configured
+; 2-3:  1st byte of special signature format is incorrect
+; 2-4:  for last module not enough byte of special signature format configured
+; 2-5:  sum of configured process data > 176 byte
+; 2-6:  different ID codes for configuration and module
+; 2-7:  different length codes for configuration and module
+; 2-8:  number of manufacturer specific data is incorrect
+; 2-9:  not enough output byte configured
+; 2-10: not enough input byte configured
+; 2-11: configuration of PROFIBUS needs more than 244 byte
+; 2-12: internal list too small
+; 2-13: too little output byte for inactive module
+; 2-14: too little input byte for inactive module
+; 3:    configuration error INTERBUS Inline station
+; 3-1:  module type not allowed
+; 3-2:  module length code zero not allowed
+; 3-3:  module length code > 32 byte not allowed
+; 3-4:  Loop1 module not allowed
+; 3-5:  sum of INTERBUS process data too large (>176 Byte)
+; 3-6:  more than 64 modules connected
+; 3-7:  sum of PROFIBUS process data > 176 Byte
+; 3-8:  more than 8 PCP devices connected
+; 4:    INTERBUS error
+; 4-1:  local bus error (Data In)
+; 4-2:  local bus error (Data Out)
+; 4-3:  error can not be localized
+; 4-4:  INTERBUS Inline module not ready
+; 4-5:  new INTERBUS module has an incorrect length- or ID-code
+; 4-6:  additional INTERBUS Inline module(s) connected
+; 5:    module error
+; 5-1:  peripheral fault
+; 5-2:  Module not ready
+; 6:    parameterization error local bus
+; 6-1:  pcp initiate telegram could not be sended
+; 7:    EEPROM fault
+; 7-1:  no EEPROM
+; 7-2:  checksum error
+; 7-3:  EEPROM read error
+; 7-4:  EEPROM write error
+; 7-5:  EEPROM initialized
+; 7-6:  difference between EEPROM configuration and real configuration
+; Byte 11  device number 1 (INTERBUS Inline module)
+; Byte 12  device number 2 (INTERBUS Inline module)
+; Byte 13  INTERBUS Inline ID code
+; Byte 14  INTERBUS Inline length code
+; Byte 15  reserved
+
+
+;********   error type
+
+Unit_Diag_Area = 16-23
+Value(1) = "#1-parameter error PROFIBUS"
+Value(2) = "#2-PROFIBUS configuration error"
+Value(3) = "#3-INLINE configuration error"
+Value(4) = "#4-INLINE error"
+Value(5) = "#5-module error"
+Value(6) = "#6-parameter error local bus"
+Unit_Diag_Area_End
+
+
+;********   error number
+
+Unit_Diag_Area = 24-31
+Value(1) = "Error number: #1"
+Value(2) = "Error number: #2"
+Value(3) = "Error number: #3"
+Value(4) = "Error number: #4"
+Value(5) = "Error number: #5"
+Value(6) = "Error number: #6"
+Value(7) = "Error number: #7"
+Value(8) = "Error number: #8"
+Value(9) = "Error number: #9"
+Value(10) = "Error number: #10"
+Value(11) = "Error number: #11"
+Unit_Diag_Area_End
+
+
+;********   error location start
+
+Unit_Diag_Area = 32-39
+Value(1) = "Module 1"
+Value(2) = "Module 2"
+Value(3) = "Module 3"
+Value(4) = "Module 4"
+Value(5) = "Module 5"
+Value(6) = "Module 6"
+Value(7) = "Module 7"
+Value(8) = "Module 8"
+Value(9) = "Module 9"
+Value(10) = "Module 10"
+Value(11) = "Module 11"
+Value(12) = "Module 12"
+Value(13) = "Module 13"
+Value(14) = "Module 14"
+Value(15) = "Module 15"
+Value(16) = "Module 16"
+Value(17) = "Module 17"
+Value(18) = "Module 18"
+Value(19) = "Module 19"
+Value(20) = "Module 20"
+Value(21) = "Module 21"
+Value(22) = "Module 22"
+Value(23) = "Module 23"
+Value(24) = "Module 24"
+Value(25) = "Module 25"
+Value(26) = "Module 26"
+Value(27) = "Module 27"
+Value(28) = "Module 28"
+Value(29) = "Module 29"
+Value(30) = "Module 30"
+Value(31) = "Module 31"
+Value(32) = "Module 32"
+Value(33) = "Module 33"
+Value(34) = "Module 34"
+Value(35) = "Module 35"
+Value(36) = "Module 36"
+Value(37) = "Module 37"
+Value(38) = "Module 38"
+Value(39) = "Module 39"
+Value(40) = "Module 40"
+Value(41) = "Module 41"
+Value(42) = "Module 42"
+Value(43) = "Module 43"
+Value(44) = "Module 44"
+Value(45) = "Module 45"
+Value(46) = "Module 46"
+Value(47) = "Module 47"
+Value(48) = "Module 48"
+Value(49) = "Module 49"
+Value(50) = "Module 50"
+Value(51) = "Module 51"
+Value(52) = "Module 52"
+Value(53) = "Module 53"
+Value(54) = "Module 54"
+Value(55) = "Module 55"
+Value(56) = "Module 56"
+Value(57) = "Module 57"
+Value(58) = "Module 58"
+Value(59) = "Module 59"
+Value(60) = "Module 60"
+Value(61) = "Module 61"
+Value(62) = "Module 62"
+Value(63) = "Module 63"
+Value(64) = "Module 64"
+Unit_Diag_Area_End
+
+
+;********   error location end
+
+Unit_Diag_Area = 40-47
+Value(1) = "-Module 1"
+Value(2) = "-Module 2"
+Value(3) = "-Module 3"
+Value(4) = "-Module 4"
+Value(5) = "-Module 5"
+Value(6) = "-Module 6"
+Value(7) = "-Module 7"
+Value(8) = "-Module 8"
+Value(9) = "-Module 9"
+Value(10) = "-Module 10"
+Value(11) = "-Module 11"
+Value(12) = "-Module 12"
+Value(13) = "-Module 13"
+Value(14) = "-Module 14"
+Value(15) = "-Module 15"
+Value(16) = "-Module 16"
+Value(17) = "-Module 17"
+Value(18) = "-Module 18"
+Value(19) = "-Module 19"
+Value(20) = "-Module 20"
+Value(21) = "-Module 21"
+Value(22) = "-Module 22"
+Value(23) = "-Module 23"
+Value(24) = "-Module 24"
+Value(25) = "-Module 25"
+Value(26) = "-Module 26"
+Value(27) = "-Module 27"
+Value(28) = "-Module 28"
+Value(29) = "-Module 29"
+Value(30) = "-Module 30"
+Value(31) = "-Module 31"
+Value(32) = "-Module 32"
+Value(33) = "-Module 33"
+Value(34) = "-Module 34"
+Value(35) = "-Module 35"
+Value(36) = "-Module 36"
+Value(37) = "-Module 37"
+Value(38) = "-Module 38"
+Value(39) = "-Module 39"
+Value(40) = "-Module 40"
+Value(41) = "-Module 41"
+Value(42) = "-Module 42"
+Value(43) = "-Module 43"
+Value(44) = "-Module 44"
+Value(45) = "-Module 45"
+Value(46) = "-Module 46"
+Value(47) = "-Module 47"
+Value(48) = "-Module 48"
+Value(49) = "-Module 49"
+Value(50) = "-Module 50"
+Value(51) = "-Module 51"
+Value(52) = "-Module 52"
+Value(53) = "-Module 53"
+Value(54) = "-Module 54"
+Value(55) = "-Module 55"
+Value(56) = "-Module 56"
+Value(57) = "-Module 57"
+Value(58) = "-Module 58"
+Value(59) = "-Module 59"
+Value(60) = "-Module 60"
+Value(61) = "-Module 61"
+Value(62) = "-Module 62"
+Value(63) = "-Module 63"
+Value(64) = "-Module 64"
+Unit_Diag_Area_End
+
+
+;********   ID code
+
+Unit_Diag_Area = 48-55
+Value(189) = "ID code: 189"     ; IL DO, Valve Outputs
+Value(190) = "ID code: 190"     ; IL DI, IL TC, IL PWR/SEG with diagnostics
+Value(91) = "ID code: 91"       ; IL AO
+Value(125) = "ID code: 125"     ; IL AO
+Value(95) = "ID code: 95"       ; IL AI
+Value(127) = "ID code: 127"     ; IL AI, IL INC IN
+Value(191) = "ID code: 191"     ; IL ELR/MLR, IL special function module, TEMPCON
+Value(177) = "ID code: 177"     ; L2 DO
+Value(178) = "ID code: 178"     ; L2 DI, L2 PWR DI
+Value(179) = "ID code: 179"     ; L2 DIO, L2 MLR, IBS FP
+Value(113) = "ID code: 113"     ; L2 AO
+Value(115) = "ID code: 115"     ; L2 AI
+Value(220) = "ID code: 220"     ; IL RS 232, IL RS 485
+Value(195) = "ID code: 195"     ; IL DC AR
+Value(205) = "ID code: 205"     ; ILC 200
+Value(207) = "ID code: 207"     ; ILC 200
+Value(223) = "ID code: 223"     ; PCP-Modules AO4/8, Temp4/8
+Unit_Diag_Area_End
+
+
+;********   length code
+
+Unit_Diag_Area = 56-63
+Value(1) = "Data length: 1 word"
+Value(2) = "Data length: 2 words"
+Value(65) = "Data length: 4 Bit"
+Value(129) = "Data length: 1 Byte"
+Value(194) = "Data length: 2 Bit"
+Unit_Diag_Area_End
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
