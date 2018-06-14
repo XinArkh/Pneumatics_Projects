@@ -1,0 +1,1 @@
+HW1: Simulation of the characteristic of a valve; HW2: PLC controlling of a pneumatic system.
