@@ -1,0 +1,22 @@
+ROGRAM Counter_Encoder
+VAR
+
+	B1_Edge: BOOL;
+END_VAR
+
+
+IF i_Converter_unit_Channel_B=FALSE THEN
+		Position:=Position+1;
+			Counts_Encoder:=Position;
+		ELSIF i_Converter_unit_Channel_B=TRUE THEN
+		Position:=Position-1;
+		Counts_Encoder:=Position;
+	END_IF;
+
+IF i_Home_Position_B1 <> B1_Edge THEN
+Position:=100;
+END_IF;
+
+IF i_Home_Position_B1 <> B1_Edge THEN
+B1_Edge:=i_Home_Position_B1;
+END_IF;

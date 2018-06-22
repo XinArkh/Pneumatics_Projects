@@ -1,5 +1,5 @@
 replace query 
-file open "C:\Users\Admin\Desktop\wuxin\wuxin\IndraLogic_L20_DP\_Emb_Logic\IndraLogic_L20_DP.pro"
+file open "C:\Users\wuxin\IndraLogic_L20_DP\_Emb_Logic\IndraLogic_L20_DP.pro"
 query off ok
 gateway local
 device name "Tcp/Ip (Level 2 Route)"
